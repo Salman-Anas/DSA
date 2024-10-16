@@ -1,0 +1,1906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1207</width>
+    <height>817</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_3">
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(17, 168, 182);
+border: 3px solid black;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="mainPicture">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:2px solid black;
+border-radius:10px;
+QPushButton{
+border-radius:20px;
+background-color:white;
+}
+
+QPushButton:hover {
+    background-color: green;
+	color:white;
+}
+QPushButton:pressed{
+	background-color:red;
+	color:green;
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="Resources/resources.qrc">
+                <normaloff>:/Icons/admin-panel.png</normaloff>:/Icons/admin-panel.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>100</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>120</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="scrapButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton{
+border:2px solid black;
+border-radius:15px;
+}
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+              </property>
+              <property name="text">
+               <string>Scrap</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Resources/resources.qrc">
+                <normaloff>:/Icons/whiteIcons/trello.svg</normaloff>:/Icons/whiteIcons/trello.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>150</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="sortButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton{
+border:2px solid black;
+border-radius:15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+              </property>
+              <property name="text">
+               <string>Sort</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Resources/resources.qrc">
+                <normaloff>:/Icons/whiteIcons/sliders.svg</normaloff>:/Icons/whiteIcons/sliders.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>150</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="exitButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>2</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <italic>true</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+QPushButton{
+border:2px solid black;
+border-radius:15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+              </property>
+              <property name="text">
+               <string>Exit</string>
+              </property>
+              <property name="icon">
+               <iconset resource="Resources/resources.qrc">
+                <normaloff>:/Icons/whiteIcons/x-circle.svg</normaloff>:/Icons/whiteIcons/x-circle.svg</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>40</width>
+                <height>40</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>850</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="sidebarFrame">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>800</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="frame_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>1</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>16</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 135, 203);
+background-color: rgb(17, 168, 182);</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="SortLabel">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>28</pointsize>
+                   <weight>75</weight>
+                   <italic>true</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>5</number>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Icons/whiteIcons/sliders.svg&quot;/&gt;&lt;span style=&quot; font-size:36pt;&quot;&gt; Sorting&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_5">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>6</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="frame_6">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>6</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(17, 168, 182);
+border:1px solid black;</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="frame_8">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>10</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="sortingButton">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>220</y>
+                       <width>161</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>2</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                       <weight>75</weight>
+                       <italic>true</italic>
+                       <bold>true</bold>
+                       <strikeout>false</strikeout>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+QPushButton{
+background-color: rgb(255, 255, 255);
+border:2px solid black;
+border-radius:15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Sort</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="Resources/resources.qrc">
+                       <normaloff>:/Icons/whiteIcons/sliders.svg</normaloff>:/Icons/whiteIcons/sliders.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="thenbycomboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>180</x>
+                       <y>170</y>
+                       <width>151</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+border:1px solid black;</string>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>16</width>
+                       <height>16</height>
+                      </size>
+                     </property>
+                     <property name="duplicatesEnabled">
+                      <bool>false</bool>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>None</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Car Name</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Model</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Price</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mileage</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fuel Type</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Engine</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Transmission</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>City</string>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QLabel" name="thenByLabel">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>170</y>
+                       <width>131</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;
+border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/Icons/whiteIcons/codepen.svg&quot;/&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt; Then By:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="sortByLabel">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>120</y>
+                       <width>131</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;
+border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/Icons/whiteIcons/chrome.svg&quot;/&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt; Sort By:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="sortbycomboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>180</x>
+                       <y>120</y>
+                       <width>151</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+border:1px solid black;</string>
+                     </property>
+                     <property name="editable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>None</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Car Name</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Model</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Price</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mileage</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fuel Type</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Engine</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Transmission</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>City</string>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QComboBox" name="algorithmcomboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>180</x>
+                       <y>70</y>
+                       <width>151</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+border:1px solid black;</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>None</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bubble Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Selection Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Insertion Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Merge Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Hybrid Merge Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Counting Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Radix Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Bucket Sort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>PigeonSort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>ShellSort</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>HeapSort</string>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QLabel" name="algorithmLabel">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>70</y>
+                       <width>131</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;
+border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/Icons/whiteIcons/bar-chart-2.svg&quot;/&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt; Algorithm&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="sortTimeLabel">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>20</y>
+                       <width>131</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;
+border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/Icons/whiteIcons/target.svg&quot;/&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Sort Time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="sortingtimeShow">
+                     <property name="geometry">
+                      <rect>
+                       <x>180</x>
+                       <y>20</y>
+                       <width>151</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QPushButton" name="sortingButton_2">
+                     <property name="geometry">
+                      <rect>
+                       <x>180</x>
+                       <y>220</y>
+                       <width>141</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>2</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                       <weight>75</weight>
+                       <italic>true</italic>
+                       <bold>true</bold>
+                       <strikeout>false</strikeout>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+QPushButton{
+background-color: rgb(255, 255, 255);
+border:2px solid black;
+border-radius:15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Load Data</string>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                    <widget class="QPushButton" name="sortingButton_3">
+                     <property name="geometry">
+                      <rect>
+                       <x>330</x>
+                       <y>220</y>
+                       <width>141</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>2</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                       <weight>75</weight>
+                       <italic>true</italic>
+                       <bold>true</bold>
+                       <strikeout>false</strikeout>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+QPushButton{
+background-color: rgb(255, 255, 255);
+border:2px solid black;
+border-radius:15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Clear Data</string>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>25</width>
+                       <height>25</height>
+                      </size>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_10">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                      <horstretch>0</horstretch>
+                      <verstretch>3</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>470</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:none;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QPushButton" name="searchButton">
+                     <property name="geometry">
+                      <rect>
+                       <x>160</x>
+                       <y>230</y>
+                       <width>161</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                       <weight>75</weight>
+                       <italic>true</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">
+QPushButton{
+background-color: rgb(255, 255, 255);
+border:2px solid black;
+border-radius:15px;
+}
+
+QPushButton:hover {
+	background-color: rgb(0, 255, 255);
+	color:black;
+}
+QPushButton:pressed{
+	
+	background-color: rgb(224, 176, 255);
+	color:black;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Search</string>
+                     </property>
+                     <property name="icon">
+                      <iconset resource="Resources/resources.qrc">
+                       <normaloff>:/Icons/whiteIcons/search.svg</normaloff>:/Icons/whiteIcons/search.svg</iconset>
+                     </property>
+                     <property name="iconSize">
+                      <size>
+                       <width>30</width>
+                       <height>30</height>
+                      </size>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="Column2Sort">
+                     <property name="geometry">
+                      <rect>
+                       <x>250</x>
+                       <y>190</y>
+                       <width>181</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);border:1px solid black;</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>None</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Index</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Car Name</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Model</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Price</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mileage</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fuel Type</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Engine</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Transmission</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>City</string>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QLabel" name="column2Label">
+                     <property name="geometry">
+                      <rect>
+                       <x>90</x>
+                       <y>190</y>
+                       <width>141</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Column 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="column1Label">
+                     <property name="geometry">
+                      <rect>
+                       <x>90</x>
+                       <y>150</y>
+                       <width>141</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Column 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="Column1Sort">
+                     <property name="geometry">
+                      <rect>
+                       <x>250</x>
+                       <y>150</y>
+                       <width>181</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);border:1px solid black;</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>None</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Index</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Car Name</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Model</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Price</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Mileage</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Fuel Type</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Engine</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Transmission</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>City</string>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QLineEdit" name="Search2Line">
+                     <property name="geometry">
+                      <rect>
+                       <x>250</x>
+                       <y>100</y>
+                       <width>181</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);border:1px solid black;</string>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Ends with</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Search2Label">
+                     <property name="geometry">
+                      <rect>
+                       <x>90</x>
+                       <y>100</y>
+                       <width>141</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Search&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="AND_OR">
+                     <property name="geometry">
+                      <rect>
+                       <x>190</x>
+                       <y>50</y>
+                       <width>111</width>
+                       <height>41</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>None</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>AND &amp;&amp;</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>OR | |</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QLineEdit" name="Search1Line">
+                     <property name="geometry">
+                      <rect>
+                       <x>250</x>
+                       <y>10</y>
+                       <width>181</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>16</pointsize>
+                       <weight>50</weight>
+                       <italic>false</italic>
+                       <bold>false</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);border:1px solid black;</string>
+                     </property>
+                     <property name="placeholderText">
+                      <string>Start with</string>
+                     </property>
+                    </widget>
+                    <widget class="QLabel" name="Search1Label">
+                     <property name="geometry">
+                      <rect>
+                       <x>90</x>
+                       <y>10</y>
+                       <width>141</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Search&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                    <widget class="QComboBox" name="Column1comboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>10</y>
+                       <width>69</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>NONE X</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>NOT !</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                    </widget>
+                    <widget class="QComboBox" name="Column2comboBox">
+                     <property name="geometry">
+                      <rect>
+                       <x>10</x>
+                       <y>100</y>
+                       <width>69</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Segoe UI</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:1px;border:1px solid black;</string>
+                     </property>
+                     <item>
+                      <property name="text">
+                       <string>NONE X</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>NOT !</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </item>
+                    </widget>
+                   </widget>
+                  </item>
+                 </layout>
+                 <zorder>frame_10</zorder>
+                 <zorder>frame_8</zorder>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="frame_7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>7</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>11</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="frame_9">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>10</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(17, 168, 182);
+border: 1px solid black;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_4">
+                     <item>
+                      <spacer name="horizontalSpacer_4">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>290</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_11">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                         <horstretch>1</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_5">
+                        <item>
+                         <widget class="QLabel" name="dataLabel">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>16</pointsize>
+                            <weight>75</weight>
+                            <italic>true</italic>
+                            <bold>true</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">border: none</string>
+                          </property>
+                          <property name="text">
+                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/Icons/whiteIcons/bar-chart.svg&quot;/&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Sorted Data&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="horizontalSpacer_5">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>240</width>
+                         <height>15</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="dataGridFrame">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                      <horstretch>0</horstretch>
+                      <verstretch>60</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_6">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>5</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>2</number>
+                     </property>
+                     <item>
+                      <widget class="QTableWidget" name="tableDataCollector">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                         <horstretch>0</horstretch>
+                         <verstretch>10</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>16</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="verticalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAlwaysOn</enum>
+                       </property>
+                       <property name="horizontalScrollBarPolicy">
+                        <enum>Qt::ScrollBarAlwaysOn</enum>
+                       </property>
+                       <attribute name="horizontalHeaderDefaultSectionSize">
+                        <number>100</number>
+                       </attribute>
+                       <attribute name="horizontalHeaderMinimumSectionSize">
+                        <number>130</number>
+                       </attribute>
+                       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                        <bool>true</bool>
+                       </attribute>
+                       <attribute name="horizontalHeaderStretchLastSection">
+                        <bool>true</bool>
+                       </attribute>
+                       <attribute name="verticalHeaderVisible">
+                        <bool>false</bool>
+                       </attribute>
+                       <attribute name="verticalHeaderDefaultSectionSize">
+                        <number>30</number>
+                       </attribute>
+                       <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                        <bool>false</bool>
+                       </attribute>
+                       <column>
+                        <property name="text">
+                         <string>Index</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Car Name</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Model</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Price</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Mileage</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Fuel Type</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Engine</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Transmission</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>City</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Segoe UI</family>
+                          <pointsize>16</pointsize>
+                          <weight>50</weight>
+                          <italic>false</italic>
+                          <bold>false</bold>
+                         </font>
+                        </property>
+                        <property name="textAlignment">
+                         <set>AlignCenter</set>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
